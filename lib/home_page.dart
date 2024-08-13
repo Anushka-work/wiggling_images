@@ -7,9 +7,9 @@ import 'favorites_page.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.Title});
+  const MyHomePage({super.key, required this.title});
 
-  final String Title;
+  final String title;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.Title),
+        title: Text(widget.title),
       ),
       drawer: Drawer(
         child: ListView(
